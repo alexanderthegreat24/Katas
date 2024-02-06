@@ -1,14 +1,24 @@
-//
-function sumNumbers(a) {
-    
-    function sumNumbers(arr) {
-    
-        sum = 0
-        for (let i = 0; i <= arr.length; i ++) {
-            if (typeof arr[i] === 'number') {
-                sum = sum + arr[i]
-            }
-        } 
-        return sum
+let house = {
+    livingRoom: {
+      windows: 4
+    },
+    bedroom: {
+      windows: 2
+    },
+    kitchen: {
+      windows: 1
     }
-}
+  }
+  
+  function countWindows(house) {
+    return house.livingRoom.windows + house.bedroom.windows + house.kitchen.windows
+    
+  }
+  
+ console.log(countWindows(house))
+
+// const house.totalWindows = livingRoom.windows + bedroom.windows + kitchen.windows
+
+// function countWindows(house.totalWindows)
+
+// return countWindows(house.totalWindows)
